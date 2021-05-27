@@ -1,4 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap');
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Merriweather', serif; */
+
 html {
 	font-size: 10px;
 	/* 1 rem = 10 px */
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2rem;
+	margin: 0;
+	text-align: center;
+	/* line-height: 1.5; */
+}
+
+#title, .tribute-heading, .footer {
+	font-family: 'Merriweather', serif;
+}
+
+h1 {
+	font-size: 4rem;
+	margin-bottom: 0;
+}
+
+h3 {
+	font-size: 3rem;
+}
+
+a{
+	color: #b97d10;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #aa0505;
+}
+
+#main {
+	margin: 3rem 1rem;
+	padding: 1.5rem;
+	border-radius: 0.5rem;
+	background-color: rgba(185, 125, 16, 0.2);
+	/* Same as #b97d10 with opacity 0.2 */
+}
+
+#image {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+	/* Display block + Margin leftright auto = Centered element
+	Maxwidth 100 + height auto = responsive */
+}
+
+#img-div {
+	background-color: white;
+	padding: 1em;
+	margin: 0;
+}
+
+#img-caption{
+	margin: 1.5em 0 0.5em;
+}
+
+.timeline, .introduction {
+	max-width: 70rem;
+	margin: 0 auto 5rem;
+	text-align: left;
+	line-height: 1.5;
+}
+
+.heading {
+	margin: 5rem 0;
+	text-align: center;
+}
+
+.event {
+	margin: 1rem auto;
+}
+
+.quote {
+	font-style: italic;
+	text-align: left;
+	max-width: 69rem;
+	margin: 0 auto 5rem;
+}
+
+.quote-by {
+	display: block;
+	text-align: right;
+}
+
+@media (max-width: 50rem) {
+	#main {
+		margin: 0;
+	}
+
+	h1 {
+		font-size: 3rem;
+		line-height: 1;
+	}
+
+	h3 {
+		font-size: 2.5rem;
+		line-height: 1;
+	}
+
+	#img-caption {
+    	font-size: 1.4rem;
+	}
 }
